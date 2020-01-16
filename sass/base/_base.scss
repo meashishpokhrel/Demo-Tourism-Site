@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+ html{
+     //this is the value of 1 rem
+     font-size: 62.5%;
+ }
+ body{
+    box-sizing: border-box;
+
+    /***********for nv-bar*///////////
+    
+    .logo{
+        height: 5rem;
+        width: auto;
+        float: left;
+        margin-top: 1rem;
+    }
+    .logo-black{
+        display: none;
+        height: 2rem;
+        width: auto;
+        float: left;
+        margin-top: .5rem;
+    }
+
+    //*********Main-nav*//////////
+    .main-nav{
+        list-style: none;
+        float: right;
+        margin-top: 2.5rem;
+    }
+    .main-nav li{
+            //text-decoration: none;
+            display: inline-block;
+            margin-left: 4rem;
+            transition: all .3s;
+    }
+
+            .main-nav li a:link, 
+            .main-nav li a:visited{
+                color: $color-white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: inherit;
+                font-size: 1.8rem;
+                padding-bottom: .5rem;
+            }
+
+            .main-nav li a:hover,
+            .main-nav li a:active{
+               border-bottom: .25rem solid $color-secondary-dark;
+               box-shadow: 0 2rem 4rem rgba($color-black,.15);
+            }
+
+
+////***for sticky****///
+.sticky{
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba($color-black,.98);
+}
+
+    .main-nav{
+        list-style: none;
+        float: right;
+        margin-top: 1.5rem;
+    }
+    .sticky li a:link, 
+    .sticky li a:visited{
+        color: $color-primary-dark;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: inherit;
+        font-size: 1.8rem;
+        padding-bottom: .5rem;
+    }
+
+    .sticky li a:hover,
+    .sticky li a:active{
+    border-bottom: .25rem solid $color-secondary-dark;
+    box-shadow: 0 2rem 4rem rgba($color-black,.15);
+    }
+
+    .sticky.logo{
+        display: none;
+
+    }
+    .sticky.logo-black{
+        display: block;
+    }
+
+       
+    /***********nav-bar ends*/////////////
+
+}

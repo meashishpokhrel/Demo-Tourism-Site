@@ -1,0 +1,37 @@
+**********new things in css**********************
+
+background-image: linear gradient to right bottom (sets the color from left to right)
+
+clip-path---------cuts the image in the header
+In natours project there is slight padding in all pages making it more attractive.
+
+******************SCSS************************************************
+donot use pixels instade use rem 
+@mixin ...@include to include helps to reduce the duplicated copy
+function..
+extend..
+16 pixels is the defualt  font-size given by browsers.
+
+7 architecture of css use
+
+use grid...
+use outline tag for image border--for cool animations
+......for the roatating card section...
+rotate it by 180deg then also apply perspective..
+
+use webkit for clippath as it helps to suppport more browser.
+
+box-dercoration break....
+used in cards writing where text are separted and treated as individuals.
+
+for circular shape wee used shape-outline and clip.path
+shape-outline describes the points where the contents flaots then we use clip path
+
+IN css two transform properties cannot work at the same time.
+
+Filter property..(For review section image blur)
+ + merges two siblings classes &__book + &__story(if book and story are siblings and book directly comes after story)
+ ~ merges two siblings of any order but same position and power..general siblings adder
+ !important is used to mke the tags do whatever other tags deifne..overwrite others
+
+ position: fixed; ////navigation stays at same point irrespective of scrolling

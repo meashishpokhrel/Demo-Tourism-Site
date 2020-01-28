@@ -26,6 +26,12 @@
  }
  body{
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port){  
+        padding: 0;
+    }
+ }
 
     /***********for nv-bar*///////////
     
@@ -114,4 +120,3 @@
        
     /***********nav-bar ends*/////////////
 
-}
